@@ -1,5 +1,5 @@
 # CSS Update App
-![](cssapp.mov)
+
 
 When you first load the app, this is what you will see:
 ![Landing page](https://github.com/taylornoj/cssUpdateApp/blob/master/docs/landing-page.jpg?raw=true)
