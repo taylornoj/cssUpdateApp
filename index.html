@@ -68,11 +68,13 @@
 
     // define function
     function handleUpdate() {
+      console.log(this.value);
 
     }
 
     // listen for change event on each of the inputs
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
   </script>
 
 </body>
