@@ -23,9 +23,18 @@
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
   <style>
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+    /* this is where we will be setting default values for variables */
+    :root { 
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+
+    img {
+      padding: var(--spacing);
+      
+    }
+   
 
     body {
       text-align: center;
