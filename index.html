@@ -16,17 +16,21 @@
     <label for="blur">Blur:</label>
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
+    <label for="border-radius">Border Radius:</label>
+    <input id="border-radius" type="range" name="border-radius" min="0" max="100" value="10" data-sizing="%">
+
     <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#ffc600">
+    <input id="base" type="color" name="base" value="#f54627">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="https://images.unsplash.com/photo-1640148791027-80af0f8b55da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=883&q=80">
 
   <style>
     /* this is where we will be setting default values for variables */
     :root {
-      --base: #ffc600;
+      --base: #f54627;
       --spacing: 10px;
+      --border-radius: 10px;
       --blur: 5px;
     }
 
@@ -34,6 +38,7 @@
     When you want to use a variable in CSS you use var */
     img {
       padding: var(--spacing);
+      border-radius: var(--border-radius);
       background: var(--base);
       filter: blur(var(--blur));
     }
@@ -49,7 +54,7 @@
       color: white;
       font-family: 'helvetica neue', sans-serif;
       font-weight: 100;
-      font-size: 50px;
+      font-size: 40px;
     }
 
     .controls {
