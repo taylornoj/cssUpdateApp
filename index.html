@@ -65,6 +65,14 @@
   <script>
     // inputs being spacing, blur, base - selecting them to update the browser when selected
     const inputs = document.querySelectorAll('.controls input');
+
+    // define function
+    function handleUpdate() {
+
+    }
+
+    // listen for change event on each of the inputs
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
   </script>
 
 </body>
