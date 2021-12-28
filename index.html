@@ -70,7 +70,7 @@
     // this.dataset - object containing all data attributes ("data-"") from specific element
     function handleUpdate() {
       const suffix = this.dataset.sizing || '';
-      console.log(this.name)
+      document.documentElement.style.setProperty(`--${this.name}`, this.value);
 
 
     }
