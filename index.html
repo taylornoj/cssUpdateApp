@@ -30,9 +30,13 @@
       --blur: 10px;
     }
 
+    /* Now that we've defined the variables we can start using them 
+    When you want to use a variable in CSS you use var */
     img {
       padding: var(--spacing);
-      
+      background: var(--base);
+      filter: blur(var(--blur));
+
     }
    
 
