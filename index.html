@@ -66,9 +66,11 @@
     // inputs being spacing, blur, base - selecting them to update the browser when selected
     const inputs = document.querySelectorAll('.controls input');
 
-    // define function
+    // define function - getting values out
+    // this.dataset - object containing all data attributes ("data-"") from specific element
     function handleUpdate() {
-      console.log(this.value);
+      const suffix = this.dataset.sizing; || '';
+      
 
     }
 
