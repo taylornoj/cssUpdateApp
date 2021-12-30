@@ -17,10 +17,10 @@
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
     <label for="border-radius">Border Radius:</label>
-    <input id="border-radius" type="range" name="border-radius" min="0" max="100" value="10" data-sizing="%">
+    <input id="border-radius" type="range" name="border-radius" min="0" max="100" value="0" data-sizing="%">
 
     <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#f54627">
+    <input id="base" type="color" name="base" value="#426eaf">
   </div>
 
   <img src="https://images.unsplash.com/photo-1640148791027-80af0f8b55da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=883&q=80">
@@ -28,9 +28,9 @@
   <style>
     /* this is where we will be setting default values for variables */
     :root {
-      --base: #f54627;
+      --base: #426eaf;
       --spacing: 10px;
-      --border-radius: 10px;
+      --border-radius: 0px;
       --blur: 5px;
     }
 
@@ -50,11 +50,11 @@
 
     body {
       text-align: center;
-      background: #000000;
-      color: white;
+      background: #f1eded;
+      color: rgb(56, 54, 54);
       font-family: 'helvetica neue', sans-serif;
       font-weight: 100;
-      font-size: 40px;
+      font-size: 35px;
     }
 
     .controls {
